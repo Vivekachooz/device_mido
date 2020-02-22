@@ -1,0 +1,12 @@
+[
+ {
+    "repository" : "DirtyUnicorns/android_hardware_qcom_thermal",
+    "target_path": "hardware/qcom-caf/thermal",
+    "branch"     : "q10x"
+ },
+ {
+   "repository":  "gitlab.com/DirtyUnicorns/android_vendor_pixelgapps",
+   "target_path": "vendor/pixelgapps",
+   "branch":      "q10x"
+ }
+]
