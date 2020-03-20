@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/du_mido.mk
+    $(LOCAL_DIR)/carbon_mido.mk
 
 COMMON_LUNCH_CHOICES := \
-    du_mido-user \
-    du_mido-userdebug \
-    du_mido-eng
+    carbon_mido-user \
+    carbon_mido-userdebug \
+    carbon_mido-eng

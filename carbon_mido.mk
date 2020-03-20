@@ -15,14 +15,21 @@
 #
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, device/xiaomi/mido/full_mido.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common DU stuff.
-$(call inherit-product, vendor/du/config/common_full_phone.mk)
+# Inherit from mido device
+$(call inherit-product, device/xiaomi/mido/device.mk)
+
+# Inherit Carbon GSM telephony parts
+$(call inherit-product, vendor/carbon/config/gsm.mk)
+
+# Inherit Carbon product configuration
+$(call inherit-product, vendor/carbon/config/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mido
-PRODUCT_NAME := du_mido
+PRODUCT_NAME := carbon_mido
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 4
 PRODUCT_MANUFACTURER := Xiaomi
